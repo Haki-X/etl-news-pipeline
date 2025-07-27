@@ -1,0 +1,26 @@
+# Environment variables - SANGAT PENTING
+# Mengabaikan file yang berisi kunci API dan kredensial rahasia.
+.env
+
+# Python cache
+# Folder dan file cache yang dibuat otomatis oleh Python.
+__pycache__/
+*.pyc
+
+# Virtual Environment
+# Folder-folder umum untuk lingkungan virtual Python.
+venv/
+.venv/
+env/
+
+# Jupyter Notebook checkpoints
+# Folder checkpoint yang dibuat otomatis oleh Jupyter.
+.ipynb_checkpoints/
+
+# IDE/Editor specific settings
+# Folder konfigurasi spesifik untuk VS Code.
+.vscode/
+
+# Generated data files
+# Mengabaikan file data mentah dan bersih yang dihasilkan oleh script.
+*.csv
