@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "indonesia-news-466813",
+  "private_key_id": "c4290f14cc277c9501724876fd66447bf0a4f11e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCveTV7pwSv/RpD\nBRDMmU5pIMZZsfYBG4BVL6tOyHXyPhJ0dQCXWbZJAkuGgovNWEn8kFDsF9HvR1KG\nxWWGtJoeow5eUWbQMxVlcvAZnFoils6XuYTxQXmi4qrQHk6TZrGHccyGwgnSBXqX\nD0OjoVpicnErksn1bINZvcwse9r1WQH+E2y3pbIdaS0H0RiwW5CriNQ/18FH1kca\np2oBBTKikGGXaPlyyw7eVZ0h1Sfdnl4C+pHqqyW6SKmNS1L/fklt0wBT0eGyZdj8\nepzTeeGMvQKeXtf32ml5Ct0vMzGMrmJLrUQidzPDV9qOlJaajCFKLcum6YDdquYq\nkwCyCKixAgMBAAECggEAAaHFcxBzFTXr5BqsdNKqLYUeAyCKEqmQUHqAg9uOaUHV\nhxq9dirh7JzmWepl5XOAQKaQ8hkonSqTJGi6kH2mf0lx7UOhiqcm+EoQ3JQdLHwt\nkLCrgVjkCjVEdGoLvggy93kB93DfiYH+iWAdd2ydPBQnZEnZsfwf3ppKx1EhkK2O\nyJMF2ObAmbp5OJ82EpEYqOOCYcpDKhR52FrtCSvxFEmPcf//0CY3BKAhp0lkc4tI\nzGZpfbFKyzAwFh+bVgh6ka+la/abZLNmf3uQGqQwjlqKfYOiLF5yAsMy7G942FE0\nRkJXNc3+1jueJXy3fKAEu9s9AHYCtKWiYBJkYzmJLwKBgQDklaCob5JHoD5Ev8MZ\nn6hJQ17sgMfQDixaK3dwin5gVQi0JTzNR10C2itqCSAtqarn86AjHfodNUdWpPf3\n7n92VKxl6d9Ie2A6lnr6+zGKwz6RTgL8NgYNuOVoC7UYWF54Vq86WyjHrZhmpHEx\nNmKmSyJiKittg66dcoLsHUcAwwKBgQDEhOF5VyeTctia9Vb/XlUZoaKL2NUou89W\no648NGIsuF2UAnixrCc0MeJCdiQuhYuSwO6Iy/FNM1HaBaVGowdkWsr+irJlbHNe\nmuUifnxWjxIk2QWtImIqGfEWXla1ifmP4P5C1vh4K2XUeWvcHMHLsSSsL6oOCP1T\nIgEv1ULZewKBgF7UBBZcUt8MB0kWFKYoqfPa0yJiOoKBnry5k49IpSzpmfbCC/tN\nQ7TPNXuD1amb3Z7kXuaypPRBChtTzNs6Qf6hGfQdldfH9x/XFaXRV7gtT2OQbYSc\nFN7Uebc0RCiZYHej3oXjE4Pi7HqIdbzoxvwd52G6BNIl8ua2fsHdU3tpAoGAZuHC\nQQo1t+XaLFXg89Ro7QBH3rrn7WlVhOAwKWirNQpYQ1J/6VRdOeAbufuruYdEqNHE\nj21lqKsDYQavnilfh1RZDaWC+8IpLBAfgU2CvrYsI4pShG+JwMzQAIvnDSdstbxu\noIN2lULzDqd6pkOP2Zmlv1c8yhg+tzUINgiJ9N0CgYBb9WPINuhxEaofsIGThn6Q\nJDpxyXgDt0N6eEKMj+/58CeF+JeUVkESgoXOKZlv9P7LlCs/WkepM9pVqUjMPQso\nVAX+LSYlQTyJPWUN4HHeVfsdvh0HrsgfDn3Zj+iZ/ZKtJBnGBaTiSHbi+rW5fZUu\nwmX19dhi0VcoZfJJLhCD3Q==\n-----END PRIVATE KEY-----\n",
+  "client_email": "bigquery-loader@indonesia-news-466813.iam.gserviceaccount.com",
+  "client_id": "104880874308950376264",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bigquery-loader%40indonesia-news-466813.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
