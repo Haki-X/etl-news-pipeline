@@ -25,7 +25,7 @@ deployments:
   entrypoint: flow.py:etl_news_pipeline_flow
   parameters: {}
   work_pool:
-    name: my-process-pool
+    name: daily-news-worker 
   schedule:
     cron: "0 8 * * *"
     timezone: "Asia/Jakarta"
