@@ -1,27 +1,27 @@
-# prefect.yaml (Versi FINAL yang Paling Sederhana dan Benar)
+# prefect.yaml (Versi FINAL yang Paling Benar)
 
-name: etl-news-pipeline # Menggunakan nama repo, bukan nama folder
-prefect-version: 3.4.10
+# Nama proyek Anda
+name: etl-news-pipeline
 
-build: null
-push: null
-
-pull:
-- prefect.deployments.steps.git_clone:
-    repository: https://github.com/Haki-X/etl-news-pipeline.git # Your repo URL
-    branch: main
-
-
+# Tentukan deployment Anda
 deployments:
-- name: daily-news-run
-  version: "1.0"
-  description: "Menjalankan pipeline ETL berita harian dari Github"
-  flow_name: etl_news_pipeline_flow
-  # ENTRYPOINT SEKARANG SANGAT SEDERHANA:
+- name: daily-news-run-
+  description: Menjalankan pipeline ETL berita harian dari Github
   entrypoint: flow.py:etl_news_pipeline_flow
-  parameters: {}
   work_pool:
-    name: "daily-news-worker"
+    name: daily-news-worker
   schedule:
     cron: "0 8 * * *"
     timezone: "Asia/Jakarta"
+  
+  # 'pull' mendefinisikan langkah-langkah yang dijalankan oleh worker
+  # sebelum mengeksekusi flow Anda.
+  pull:
+    # Langkah 1: Unduh kode dari GitHub
+    - prefect.deployments.steps.git_clone:
+        repository: https://github.com/Haki-X/etl-news-pipeline.git
+        branch: main
+
+    # Langkah 2: Instal semua library yang dibutuhkan
+    - prefect.deployments.steps.pip_install_requirements:
+        requirements_file: requirements.txt
