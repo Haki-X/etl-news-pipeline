@@ -16,6 +16,3 @@ deployments:
         repository: https://github.com/Haki-X/etl-news-pipeline.git
         branch: main
 
-    # Langkah 2: Instal semua library yang dibutuhkan
-    - prefect.deployments.steps.pip_install_requirements:
-        requirements_file: requirements.txt
