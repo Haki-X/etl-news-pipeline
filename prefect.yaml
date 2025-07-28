@@ -1,21 +1,15 @@
 # prefect.yaml (Versi FINAL yang Paling Benar)
 
-# Nama proyek Anda
 name: etl-news-pipeline
+prefect-version: 3.4.10 # Atau versi Anda
 
-# Tentukan deployment Anda
 deployments:
-- name: daily-news-run-
+- name: daily-news-run
   description: Menjalankan pipeline ETL berita harian dari Github
   entrypoint: flow.py:etl_news_pipeline_flow
   work_pool:
-    name: daily-news-worker
-  schedule:
-    cron: "0 8 * * *"
-    timezone: "Asia/Jakarta"
-  
-  # 'pull' mendefinisikan langkah-langkah yang dijalankan oleh worker
-  # sebelum mengeksekusi flow Anda.
+    name: daily-news-worker # Pastikan ini nama work pool Anda
+
   pull:
     # Langkah 1: Unduh kode dari GitHub
     - prefect.deployments.steps.git_clone:
