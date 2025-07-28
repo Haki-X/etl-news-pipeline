@@ -74,3 +74,9 @@ Pipeline ini mengikuti alur kerja yang jelas dan modular:
 - **Untuk menjalankan secara manual (pengujian):**
   ```bash
   python flow.py
+
+
+## Dasbor & Repositori
+
+* **Dasbor Interaktif Looker Studio:** [Lihat Dasbor Langsung](https://lookerstudio.google.com/reporting/51adde83-2694-4f36-806e-e6d9330e9e79)
+* **Repositori Kode:** [Lihat Kode di GitHub](https://github.com/Haki-X/etl-news-pipeline)
