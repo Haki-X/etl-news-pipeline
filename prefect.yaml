@@ -12,10 +12,6 @@ pull:
     branch: main
 
 
-- prefect.deployments.steps.pip_install:
-    requirements_file: requirements.txt
-
-
 deployments:
 - name: daily-news-run
   version: "1.0"
