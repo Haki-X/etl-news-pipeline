@@ -2,9 +2,9 @@
 
 import os
 from dotenv import load_dotenv
-from etl.extraction import extract_news_data
-from etl.transformation import clean_and_transform_data
-from etl.loading import load_to_bigquery
+from extraction import extract_news_data
+from transformation import clean_and_transform_data
+from loading import load_to_bigquery
 
 load_dotenv()
 
