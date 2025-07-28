@@ -1,6 +1,7 @@
-# Environment variables - SANGAT PENTING
-# Mengabaikan file yang berisi kunci API dan kredensial rahasia.
+# Environment variables & Secrets
+# Mengabaikan file .env dan seluruh folder config
 .env
+config/
 
 # Python cache
 # Folder dan file cache yang dibuat otomatis oleh Python.

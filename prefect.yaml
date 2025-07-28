@@ -1,31 +1,27 @@
-# prefect.yaml (Versi Final yang Benar)
+# prefect.yaml (Versi FINAL yang Paling Sederhana dan Benar)
 
-name: etl_portofolio
+name: etl-news-pipeline # Menggunakan nama repo, bukan nama folder
 prefect-version: 3.4.10
 
 build: null
 push: null
 
-# 'pull' sekarang memiliki dua langkah
 pull:
 - prefect.deployments.steps.git_clone:
     repository: https://github.com/Haki-X/etl-news-pipeline.git
     branch: main
-
-# LANGKAH BARU: Pindah ke dalam folder etl_portofolio
-- prefect.deployments.steps.set_working_dir:
-    directory: etl_portofolio
+# Kita tidak lagi memerlukan set_working_dir
 
 deployments:
 - name: daily-news-run
   version: "1.0"
   description: "Menjalankan pipeline ETL berita harian dari Github"
   flow_name: etl_news_pipeline_flow
-  # 'entrypoint' sekarang lebih sederhana karena kita sudah berada di folder yang benar
+  # ENTRYPOINT SEKARANG SANGAT SEDERHANA:
   entrypoint: flow.py:etl_news_pipeline_flow
   parameters: {}
   work_pool:
-    name: my-process-pool # Ganti jika nama work pool Anda berbeda
+    name: my-process-pool
   schedule:
     cron: "0 8 * * *"
     timezone: "Asia/Jakarta"
