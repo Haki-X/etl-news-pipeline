@@ -27,7 +27,7 @@ deployments:
   description: Menjalankan pipeline ETL berita harian dari Github
   schedule: {}
   flow_name: etl_news_pipeline_flow
-  entrypoint: flow.py:etl_news_pipeline_flow
+  entrypoint: etl_portofolio/flow.py:etl_news_pipeline_flow
   parameters: {}
   work_pool:
     name: daily-news-worker
