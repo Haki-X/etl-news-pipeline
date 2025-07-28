@@ -6,9 +6,9 @@ from prefect import task, flow
 from datetime import timedelta
 
 # Impor fungsi-fungsi yang sudah Anda buat
-from etl.extraction import extract_news_data
-from etl.transformation import clean_and_transform_data
-from etl.loading import load_to_bigquery
+from extraction import extract_news_data
+from transformation import clean_and_transform_data
+from loading import load_to_bigquery
 
 # --- KONFIGURASI PUSAT ---
 load_dotenv()
