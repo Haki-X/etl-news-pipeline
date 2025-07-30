@@ -1,0 +1,7 @@
+pandas
+requests
+python-dotenv
+google-cloud-bigquery
+textblob
+prefect
+prefect-docker
