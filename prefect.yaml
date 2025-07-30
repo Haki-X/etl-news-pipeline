@@ -1,22 +1,21 @@
-# prefect.yaml (Versi FINAL dengan Docker)
+# prefect.yaml (Final Correct Version)
 
 name: etl-news-pipeline
-prefect-version: 3.4.10 # Atau versi Anda
-
-# BAGIAN BARU: 'build' memberitahu Prefect cara membuat gambar Docker
-build:
-  - prefect_docker.deployments.steps.build_docker_image:
-      image_name: Haki-X/etl-news-pipeline # Ganti dengan "username_anda/nama_proyek"
-      tag: latest
-      dockerfile: Dockerfile
-
-# 'pull' tidak lagi diperlukan karena kode sudah ada di dalam gambar Docker
-pull:
-   - prefect.deployments.steps.pip_install_requirements:
-        requirements_file: requirements.txt
 
 deployments:
 - name: daily-news-run
+  description: "Runs the daily news ETL pipeline from GitHub"
   entrypoint: flow.py:etl_news_pipeline_flow
   work_pool:
-    name: daily-news-worker # Pastikan ini nama work pool Anda
+    name:daily-news-worker # Make sure this matches your work pool name
+
+  # 'pull' defines the steps the worker takes before running the flow
+  pull:
+    # Step 1: Clone the code from your GitHub repository
+    - prefect.deployments.steps.git_clone:
+        repository: https://github.com/Haki-X/etl-news-pipeline.git
+        branch: main
+
+    # Step 2: Install all libraries from requirements.txt
+    - prefect.deployments.steps.pip_install_requirements:
+        requirements_file: requirements.txt
