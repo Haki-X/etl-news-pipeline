@@ -11,7 +11,9 @@ build:
       dockerfile: Dockerfile
 
 # 'pull' tidak lagi diperlukan karena kode sudah ada di dalam gambar Docker
-pull: null
+pull:
+   - prefect.deployments.steps.pip_install_requirements:
+        requirements_file: requirements.txt
 
 deployments:
 - name: daily-news-run
